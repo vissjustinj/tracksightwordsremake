@@ -1,0 +1,19 @@
+#studentheader {
+    background-color: cornflowerblue;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+#addstudentbutton {
+    padding: 3px;
+    margin-left: 5px;
+}
+
+#studentsidebar {
+    margin-right: 10px;
+}
+
+.DashboardContent {
+   display: flex;
+}

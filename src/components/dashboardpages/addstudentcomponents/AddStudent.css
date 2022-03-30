@@ -1,0 +1,26 @@
+a:hover {
+        color: #6996FF;
+        cursor: pointer;
+        text-decoration: none
+}
+.backtodashboardlink {
+    margin-top: 10px
+}
+
+#addstudentcard, #editstudentcard {
+    padding: 10px;
+
+}
+
+.card {
+    margin: 10px, 10px, 10px, 10px;
+    
+}
+
+.add-editstudentcard{
+    margin:10px
+}
+
+#editstudentform {
+    display: none;
+}

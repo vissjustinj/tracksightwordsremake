@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; 
+import LoginPage from './components/authforms/LoginPage'
+import Header from './components/dashboardpages/Header'
+import Dashboard from './components/dashboardpages/Dashboard'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  
+  return <Dashboard />
 }
 
-export default App;
+//eventually, the logic should read... 
+//if logged in, show the dashboard and the header at the top. 
+//if not logged in, show the login pages 
+export default App

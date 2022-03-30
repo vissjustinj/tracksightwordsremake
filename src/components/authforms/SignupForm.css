@@ -1,0 +1,9 @@
+.signup-login-form {
+    border: solid #000000;
+    border-radius: 1px;
+    padding: 20px; 
+    margin: 10%;
+    margin-top: 2px;
+    max-width: 500px;
+
+}

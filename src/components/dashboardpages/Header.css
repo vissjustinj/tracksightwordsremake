@@ -1,0 +1,18 @@
+.headerdiv {
+    margin: 0, 5px,5px,5px;
+    border-bottom: solid #bbb;
+    border-left: solid #bbb;
+    border-right: solid #bbb;
+    
+    
+}
+
+h2 {
+    margin: 3px; 
+    padding: 5px;
+
+}
+
+#logoutheaderbutton {
+   margin: 5px; 
+}
