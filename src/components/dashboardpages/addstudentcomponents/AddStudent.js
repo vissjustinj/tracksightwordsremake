@@ -29,13 +29,10 @@ const AddStudent = (props) => {
         props.onAddButton()
     }
     
-    //When the edit student button is clicked, show the input for adding a name. 
-    const [showEditForm,setshowEditForm] = useState(false)
-    
-    const toggleEditForm = () => {
-        setshowEditForm(!showEditForm)
-        console.log(showEditForm)
-        
+    //when the delete button is clicked, remove the student from the array
+    const deleteClicked = () => {
+        props.onDeleteButton(props.student)
+
     }
 
     return (
@@ -62,14 +59,13 @@ const AddStudent = (props) => {
                 <div className="column">
                     <div className="ui card add-editstudentcard" id="editstudentcard">
                         <div className="edit-student-form">
-                                <h2>Edit Student</h2>
+                                <h2>Delete Student</h2>
+                                <br/>
                                 <div className="row">
-                                     <label>{props.student}</label>
+                                     <h2>{props.student}</h2>
                                 </div>
-                                
-                                <button className="ui button" onClick={toggleEditForm} >Edit Student</button>
-                                <button className="ui button" >Delete Student</button>
-                                
+                                <button className="ui button" onClick={deleteClicked}>Delete Student</button>
+                               
                         </div>
 
                     </div>

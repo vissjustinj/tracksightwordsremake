@@ -34,6 +34,18 @@ const Dashboard = () => {
         setshowAddStudentPage(!showAddStudentPage)
     }
 
+    //delete a student from the array 
+    const deleteStudent = (student) => {
+        //find the index of the student's name in array 
+        let index = myStudents.findIndex((element) => element.name == student)
+        console.log(index)
+        let filteredstudents = myStudents.filter((element) => element.name !== student)
+        let removedstudent = myStudents.splice(index,1)
+        console.log(`removed ${removedstudent}`)
+        setmyStudents(filteredstudents)
+        setselectedstudent('Select a Student from the Left Sidebar')
+    }
+
     //render the app
     if (showAddStudentPage) {
         return (
@@ -41,7 +53,7 @@ const Dashboard = () => {
                 <Header />
                 <div className="DashboardContent">
                     <SideStudentList students={myStudents} onAddButton={toggleAddStudentPage} onClickStudent={changeSelectedStudent}/>
-                    <AddStudent onAddStudent={addStudentHandler} onAddButton={toggleAddStudentPage} student={selectedstudent}/>
+                    <AddStudent onAddStudent={addStudentHandler} onAddButton={toggleAddStudentPage} student={selectedstudent} onDeleteButton={deleteStudent}/>
                 </div>
             </div>
         )
